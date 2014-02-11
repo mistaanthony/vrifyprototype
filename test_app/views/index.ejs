@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prototype</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <script type="text/javascript" src="/javascripts/getlocation.js"></script>
+  </head>
+  <body>
+
+
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-6 verification-form">
+  				<form method="post" action="/verify">
+  					<input type="text" class="form-control" id="door-number-input" name="doorNumber" placeholder="Door Number"/>
+  					<input type="text" class="form-control" id="street-name-input" name="streetName" placeholder="Street Name"/>
+  					<input type="text" class="form-control" id="town-name-input" name="townName" placeholder="Town Name"/>
+  					<input type="text" class="form-control" id="city-name-input" name="cityName" placeholder="City Name"/>
+  					<input type="text" class="form-control" id="postcode-input" name="postcode" placeholder="Postcode"/>
+  					<input type="text" id="latitudeInput" name="latitude" style="display:none"></input>
+  					<input type="text" id="longitudeInput" name="longitude" style="display:none"></input>
+  					<button class="btn btn-success" type="submit" id="continue-verification-button">CONTINUE</button>
+  				</form>
+  			</div>
+  		</div>
+
+  		<div class="row">
+  			<div class="col-md-6">
+  						<button class="btn btn-default" id="begin-verification-buttton" onclick="getLocation()">BEGIN VERIFICATION</button>
+  			</div>
+  		</div>
+  	</div>
+
+
+
+
+  <script type="text/javascript" src="/javascripts/jquery.js"></script>
+  </body>
+</html>

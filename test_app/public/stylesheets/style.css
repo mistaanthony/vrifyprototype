@@ -1,0 +1,19 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#door-number-input,#street-name-input,#town-name-input,#city-name-input,#postcode-input,#begin-verification-buttton,#continue-verification-button{
+	width: 200px;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+.verification-form{
+	margin-top: 50px;
+}
+
+#continue-verification-button{
+	display: none;
+}
+
