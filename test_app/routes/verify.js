@@ -45,11 +45,11 @@ geocoder.geocode(fullAddress, function(err, coords) {
 	function matchCoordinates(lat,lon,currentLat,currentLong){
 		if (lat === currentLat){
 			if (lon === currentLong) { 
-
 				x = "latitudes & longitudes match";
-				return x;
-
-			};
+			}
+			else{
+				x = "Verification Failed";
+			}
 		}
 		else{
 			x = "Verification Failed";
