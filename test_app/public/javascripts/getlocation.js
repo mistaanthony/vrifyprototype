@@ -1,5 +1,13 @@
-    
+  
+        $(document).ready(function(){
+
+          $( "#begin-verification-buttton" ).click(function() {
+ $( "#begin-verification-buttton" ).html('<i class="fa fa-refresh fa-spin"></i>');
+  getLocation();
+});
+
     function getLocation()
+
   {
   if (navigator.geolocation)
     {
@@ -14,7 +22,6 @@ function sendLocation(position)
   var longVar = position.coords.longitude;
 
 
-        $(document).ready(function(){
 
 
   $( "#latitudeInput" ).val( latVar ), $( "#longitudeInput" ).val( longVar );
@@ -23,7 +30,9 @@ function sendLocation(position)
 
   $('#begin-verification-buttton').hide();
 
- });
+
 
 }
 }
+
+ });
